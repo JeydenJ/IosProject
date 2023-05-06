@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     }
     //12345
     var test = "just for test branch"
+    
+    var test2 = "second test"
 
 
 }
