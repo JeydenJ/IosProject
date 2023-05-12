@@ -22,6 +22,7 @@ class SignUpViewController: UIViewController{
         // Do any additional setup after loading the view.
         let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         isValidEmail = NSPredicate(format:"SELF MATCHES %@", emailRegex)
+        DataStore.shared.loadUsers()
        
     }
     
@@ -41,6 +42,9 @@ class SignUpViewController: UIViewController{
             passwordTextField.text = ""
         }
         else {
+            let newUser = User(email: emailTextField.text!, password: passwordTextField.text!)
+            DataStore.shared.users.append(newUser)
+            DataStore.shared.saveUsers()
             return
         }
         
