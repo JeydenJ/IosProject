@@ -214,6 +214,35 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="gkM-kv-pSH">
+                                <rect key="frame" x="78" y="667" width="223" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="223" id="AW4-LW-rfS"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="223" id="JMB-Nk-VMe"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="tEp-3X-J79"/>
+                                    <constraint firstAttribute="height" constant="65" id="xgU-wZ-VpK"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Post a Task">
+                                            <attributes>
+                                                <font key="NSFont" size="22" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                    <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="fe:" destination="Th8-Wu-maz" eventType="touchUpInside" id="s46-gk-tnR"/>
+                                    <action selector="signUpBtn:" destination="Th8-Wu-maz" eventType="touchUpInside" id="yRz-Md-xHi"/>
+                                    <action selector="signupButtonPressed:" destination="oag-93-ky8" eventType="touchUpInside" id="V6U-jc-xkn"/>
+                                    <segue destination="yxE-1c-7Zd" kind="show" id="VO7-6h-875"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mO5-YG-z5g"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -226,6 +255,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lki-jI-oRg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3385.4961832061067" y="-183.09859154929578"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eLL-PG-VAb">
+            <objects>
+                <viewController id="yxE-1c-7Zd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CAZ-1S-Z4i">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="post" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqn-Qf-Wwt">
+                                <rect key="frame" x="165" y="185" width="34" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MEN-kC-jwr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="G1R-DM-NTh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qFw-oJ-0EW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4280" y="-183"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="LmX-OT-VRW">
