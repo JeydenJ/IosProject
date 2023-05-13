@@ -10,11 +10,13 @@ import Foundation
 struct User : Codable {
     let email: String
     let password: String
+    let firstName: String
+    let lastName: String
+    let suburb: String
 }
 class DataStore{
-    var email: String = ""
-    var password: String = ""
     var users: [User] = []
+    var loggedInUserEmail: String?
     
     
     private let fileName = "users.txt"
@@ -35,6 +37,7 @@ class DataStore{
         }
     // load users by decoding JSON file
     func loadUsers() {
+        print("loading users...")
         do {
             let fileURL = try FileManager.default
                 .url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
@@ -46,5 +49,19 @@ class DataStore{
             print("Error loading users: \(error.localizedDescription)")
         }
     }
+
+    func getFirstNameForLoggedInUser() -> String? {
+            guard let loggedInUserEmail = loggedInUserEmail else {
+                return nil
+            }
+        print("loggedInUserEmail:", loggedInUserEmail)
+        
+            if let loggedInUser = users.first(where: { $0.email == loggedInUserEmail }) {
+                print("loggedInUser:", loggedInUser)
+                return loggedInUser.firstName
+            } else {
+                return nil
+            }
+        }
     private init() {}
 }

@@ -40,13 +40,14 @@ class LoginViewController: UIViewController
                 }
                 let savedUsers = DataStore.shared.users
                     if savedUsers.first(where: { $0.email == email && $0.password == password }) != nil {
-                    
+                        DataStore.shared.loggedInUserEmail = email
                         return
                         }
                     else {
                         alertDisplay(withTitle: "Alert", message: "Invalid email or password")
                         return
                     }
+        
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
