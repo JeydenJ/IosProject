@@ -13,10 +13,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    //12345
-    var test = "just for test branch"
-    
-    var test2 = "second test"
+ 
 
 
 }
