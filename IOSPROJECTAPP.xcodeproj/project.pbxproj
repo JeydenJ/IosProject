@@ -19,6 +19,8 @@
 		39F35ED62A0CF4A400155C7B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F35ED52A0CF4A400155C7B /* SignUpViewController.swift */; };
 		39F35ED82A0D2B3200155C7B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F35ED72A0D2B3200155C7B /* LoginViewController.swift */; };
 		FDFAB78B2A10AC8500C607C3 /* PostTaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFAB78A2A10AC8500C607C3 /* PostTaskController.swift */; };
+		FDFAB78D2A10B38100C607C3 /* ShowTaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFAB78C2A10B38100C607C3 /* ShowTaskController.swift */; };
+		FDFAB78F2A11107B00C607C3 /* TaskFindController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFAB78E2A11107B00C607C3 /* TaskFindController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		39F35ED52A0CF4A400155C7B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		39F35ED72A0D2B3200155C7B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FDFAB78A2A10AC8500C607C3 /* PostTaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTaskController.swift; sourceTree = "<group>"; };
+		FDFAB78C2A10B38100C607C3 /* ShowTaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTaskController.swift; sourceTree = "<group>"; };
+		FDFAB78E2A11107B00C607C3 /* TaskFindController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskFindController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 				39DC1C732A0507FE00FDEA9B /* SceneDelegate.swift */,
 				39DC1C752A0507FE00FDEA9B /* ViewController.swift */,
 				39DC1C772A0507FE00FDEA9B /* Main.storyboard */,
+				FDFAB78C2A10B38100C607C3 /* ShowTaskController.swift */,
+				FDFAB78E2A11107B00C607C3 /* TaskFindController.swift */,
 				399ECC1D2A0FCB7D00D03CC6 /* MainViewController.swift */,
 				FDFAB78A2A10AC8500C607C3 /* PostTaskController.swift */,
 				399ECC1B2A0F92E600D03CC6 /* SignUp2ViewController.swift */,
@@ -158,7 +164,9 @@
 			files = (
 				39DC1C762A0507FE00FDEA9B /* ViewController.swift in Sources */,
 				FDFAB78B2A10AC8500C607C3 /* PostTaskController.swift in Sources */,
+				FDFAB78F2A11107B00C607C3 /* TaskFindController.swift in Sources */,
 				396AD4CF2A0E787D00323C99 /* DataStore.swift in Sources */,
+				FDFAB78D2A10B38100C607C3 /* ShowTaskController.swift in Sources */,
 				39DC1C722A0507FE00FDEA9B /* AppDelegate.swift in Sources */,
 				39DC1C742A0507FE00FDEA9B /* SceneDelegate.swift in Sources */,
 				39F35ED82A0D2B3200155C7B /* LoginViewController.swift in Sources */,

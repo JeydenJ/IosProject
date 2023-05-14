@@ -21,20 +21,9 @@ class PostTaskController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func submitButtonTapped(_ sender: UIButton) {
-        var taskData = [String: Any]()
-        if let taskName = taskname.text {
-            taskData["taskName"] = taskName
-        }
-        if let budgetValue = budget.text {
-            taskData["budget"] = budgetValue
-        }
-        let chosenTime = choosetime.date
-        taskData["chosenTime"] = chosenTime
-        if let taskDetail = detail.text {
-            taskData["taskDetail"] = taskDetail
-        }
-        let defaults = UserDefaults.standard
-        defaults.set(taskData, forKey: "taskData")
+        //save as dictionary
+        let task = Task(taskname: taskname.text ?? "", budget: budget.text ?? "", choosetime: choosetime.date, detail: detail.text ?? "")
+                DataStore.shared.saveTask(task: task)
     }
 
 
