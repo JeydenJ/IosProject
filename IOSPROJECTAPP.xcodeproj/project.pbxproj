@@ -53,13 +53,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18E99AAC2A10C0370056872E /* Message */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Message;
-			sourceTree = "<group>";
-		};
 		39DC1C652A0507FE00FDEA9B = {
 			isa = PBXGroup;
 			children = (
@@ -88,7 +81,6 @@
 				18B15CB02A0F0B8200C4BBF5 /* MessageListCell.swift */,
 				18B15CAA2A0F0B8200C4BBF5 /* MessageListViewController.swift */,
 				18B15CAC2A0F0B8200C4BBF5 /* MessageManager.swift */,
-				18E99AAC2A10C0370056872E /* Message */,
 				18B15CAB2A0F0B8200C4BBF5 /* MessageModel.swift */,
 				18B15CAF2A0F0B8200C4BBF5 /* PayViewController.swift */,
 				39DC1C772A0507FE00FDEA9B /* Main.storyboard */,
