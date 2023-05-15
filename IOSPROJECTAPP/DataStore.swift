@@ -19,6 +19,7 @@ struct Task : Codable {
     let budget: String
     let choosetime: Date
     let detail: String
+    var email: String
 }
 
 class DataStore{
@@ -27,12 +28,25 @@ class DataStore{
     var loggedInUserEmail: String?
     var tasks: [Task] = []
     
+    private let tasksKey = "tasks"
     private let fileName = "users.txt"
     static let shared = DataStore()
     
     func saveTask(task: Task) {
-        tasks.append(task)
+        guard let loggedInUserEmail = loggedInUserEmail else {
+                    return
+                }
+                var taskWithUserEmail = task
+                taskWithUserEmail.email = loggedInUserEmail
+                tasks.append(taskWithUserEmail)
+                UserDefaults.standard.set(try? PropertyListEncoder().encode(tasks), forKey: tasksKey)
     }
+    func loadTasks() {
+            if let data = UserDefaults.standard.value(forKey: tasksKey) as? Data,
+               let tasks = try? PropertyListDecoder().decode([Task].self, from: data) {
+                self.tasks = tasks
+            }
+        }
     
     // Write to JSON file and encode users with JSONENCODER
     func saveUsers() {

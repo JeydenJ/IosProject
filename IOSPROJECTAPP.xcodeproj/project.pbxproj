@@ -16,6 +16,7 @@
 		39DC1C792A0507FE00FDEA9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39DC1C772A0507FE00FDEA9B /* Main.storyboard */; };
 		39DC1C7B2A0507FF00FDEA9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39DC1C7A2A0507FF00FDEA9B /* Assets.xcassets */; };
 		39DC1C7E2A0507FF00FDEA9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39DC1C7C2A0507FF00FDEA9B /* LaunchScreen.storyboard */; };
+		39E56FDD2A12428000C8723B /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E56FDC2A12428000C8723B /* TaskCell.swift */; };
 		39F35ED62A0CF4A400155C7B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F35ED52A0CF4A400155C7B /* SignUpViewController.swift */; };
 		39F35ED82A0D2B3200155C7B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F35ED72A0D2B3200155C7B /* LoginViewController.swift */; };
 		FDFAB78B2A10AC8500C607C3 /* PostTaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFAB78A2A10AC8500C607C3 /* PostTaskController.swift */; };
@@ -34,6 +35,7 @@
 		39DC1C7A2A0507FF00FDEA9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39DC1C7D2A0507FF00FDEA9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39DC1C7F2A0507FF00FDEA9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39E56FDC2A12428000C8723B /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		39F35ED52A0CF4A400155C7B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		39F35ED72A0D2B3200155C7B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FDFAB78A2A10AC8500C607C3 /* PostTaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTaskController.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 		39DC1C702A0507FE00FDEA9B /* IOSPROJECTAPP */ = {
 			isa = PBXGroup;
 			children = (
+				39E56FDC2A12428000C8723B /* TaskCell.swift */,
 				396AD4CE2A0E787D00323C99 /* DataStore.swift */,
 				39DC1C712A0507FE00FDEA9B /* AppDelegate.swift */,
 				39DC1C732A0507FE00FDEA9B /* SceneDelegate.swift */,
@@ -166,6 +169,7 @@
 				39DC1C722A0507FE00FDEA9B /* AppDelegate.swift in Sources */,
 				39DC1C742A0507FE00FDEA9B /* SceneDelegate.swift in Sources */,
 				39F35ED82A0D2B3200155C7B /* LoginViewController.swift in Sources */,
+				39E56FDD2A12428000C8723B /* TaskCell.swift in Sources */,
 				399ECC1C2A0F92E600D03CC6 /* SignUp2ViewController.swift in Sources */,
 				39F35ED62A0CF4A400155C7B /* SignUpViewController.swift in Sources */,
 				399ECC1E2A0FCB7D00D03CC6 /* MainViewController.swift in Sources */,

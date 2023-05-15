@@ -20,11 +20,22 @@ class PostTaskController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    @IBAction func submitButtonTapped(_ sender: UIButton) {
+    @IBAction func postButtonTapped(_ sender: UIButton) {
         //save as dictionary
-        let task = Task(taskname: taskname.text ?? "", budget: budget.text ?? "", choosetime: choosetime.date, detail: detail.text ?? "")
-                DataStore.shared.saveTask(task: task)
+        guard let loggedInUserEmail = DataStore.shared.loggedInUserEmail else {
+                // handle the case when no user is logged in
+                return
+            }
+            
+            let task = Task(taskname: taskname.text ?? "",
+                            budget: budget.text ?? "",
+                            choosetime: choosetime.date,
+                            detail: detail.text ?? "",
+                            email: loggedInUserEmail)
+            
+            DataStore.shared.saveTask(task: task)
     }
+    
 
 
 }
