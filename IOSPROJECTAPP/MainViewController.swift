@@ -18,7 +18,7 @@ class MainViewController: UIViewController {
         DataStore.shared.loadUsers()
         if let firstName = DataStore.shared.getFirstNameForLoggedInUser() {
             print("First name: \(firstName)")
-            nameLabel.text = firstName
+            nameLabel.text = ("Welcome \(firstName)")
             }
     }
 }

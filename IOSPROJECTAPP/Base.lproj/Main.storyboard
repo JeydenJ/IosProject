@@ -207,9 +207,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RII-F1-oAx">
-                                <rect key="frame" x="175" y="215" width="45" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RII-F1-oAx">
+                                <rect key="frame" x="243" y="60" width="134" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -217,6 +216,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mO5-YG-z5g"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RII-F1-oAx" firstAttribute="trailing" secondItem="4f0-ZL-pW7" secondAttribute="trailingMargin" id="62f-ZG-XI4"/>
+                            <constraint firstItem="mO5-YG-z5g" firstAttribute="bottom" secondItem="RII-F1-oAx" secondAttribute="bottom" constant="707" id="FAL-kH-ab1"/>
+                            <constraint firstItem="RII-F1-oAx" firstAttribute="top" secondItem="4f0-ZL-pW7" secondAttribute="topMargin" constant="-43" id="OZ5-PQ-6LI"/>
+                            <constraint firstItem="RII-F1-oAx" firstAttribute="leading" secondItem="mO5-YG-z5g" secondAttribute="leading" constant="243" id="vq8-Of-Fa9"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nNW-w4-6BE"/>
                     <connections>
