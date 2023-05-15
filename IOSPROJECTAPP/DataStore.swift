@@ -14,13 +14,25 @@ struct User : Codable {
     let lastName: String
     let suburb: String
 }
+struct Task : Codable {
+    let taskname: String
+    let budget: String
+    let choosetime: Date
+    let detail: String
+}
+
 class DataStore{
+    var taskname: String = ""
     var users: [User] = []
     var loggedInUserEmail: String?
-    
+    var tasks: [Task] = []
     
     private let fileName = "users.txt"
     static let shared = DataStore()
+    
+    func saveTask(task: Task) {
+        tasks.append(task)
+    }
     
     // Write to JSON file and encode users with JSONENCODER
     func saveUsers() {
